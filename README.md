@@ -1,6 +1,6 @@
 # Use Vala for your next library, %username%
 
-![Objects for free](https://github.com/antono/vala-object/blob/master/objects.jpg)
+![Objects for free](https://github.com/antono/vala-object/raw/master/objects.jpg)
 
 Write your next library in [Vala][Vala] and get some bindings for free.
 Here is example how to get functions from shared object available to
