@@ -19,7 +19,7 @@ Vala is [very fast][VBench]. Keep in mind!
     
 ### Fedora
 
-    sudo yum install vala
+    sudo yum install vala gobject-introspection-devel
     make
     make run # setup for your favorite lang below
 
