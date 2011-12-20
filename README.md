@@ -12,40 +12,39 @@ Vala is [very fast][VBench]. Keep in mind!
 
 ### Debian/Ubuntu
 
-    sudo apt-get install valac gobject-introspection \
-         libffi-dev glib-dev libglib2.0-dev
-    make
-    make run # setup for your favorite lang below
+    sudo apt-get install valac gobject-introspection libffi-dev libglib2.0-dev
+    
+See setup for your favorite lang below
     
 ### Fedora
 
     sudo yum install vala gobject-introspection-devel
-    make
-    make run # setup for your favorite lang below
 
 ### OSX
 
-    sudo apt-get^W brew install vala
-    make
-    make run # setup for your favorite lang below
+    brew install vala
 
-Feel free to add your instructions... I've donated my mac to charity :)
+Feel free to add OSX instructions... I've donated my mac to charity :)
 
 ## Ruby
 
     gem install ruby gir_ffi
+    make run-ruby
 
 ## Python
 
-    nothing on ubuntu
+    make run-python
 
 ## Lua
 
     sudo apt-get install lua5.1 luarocks
+    luarocks install lgi
+    make run-lua
 
 ## JavaScript
 
     sudo apt-get install gjs seed
+    make run-js
 
 ## Other languages
 
