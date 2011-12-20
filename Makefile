@@ -3,12 +3,17 @@ export GI_TYPELIB_PATH := $(shell pwd)
 
 all: vala-object.so ValaObject-0.1.typelib
 
-run: all
-	ruby langs/test.rb
-	python langs/test.py
-	lua langs/test.lua
-	gjs langs/test.js
-	seed langs/test.js
+run: all run-ruby run-python run-lua run-js
+
+run-ruby:
+        ruby langs/test.rb
+run-python:
+        python langs/test.py
+run-lua:
+        lua langs/test.lua
+run-js:
+        gjs langs/test.js
+        seed langs/test.js
 
 vala-object.so:
 	valac \
