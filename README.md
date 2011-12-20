@@ -6,7 +6,7 @@ Write your next library in [Vala][Vala] and get some bindings for free.
 Here is example how to get functions from shared object available to
 Ruby, Python, Lua, JavaScript and [many other languages][GOB]
 
-Vala is [very fast][VBench] and managed language.
+Vala is [very fast][VBench]. Keep in mind!
 
 ## Vala setup
 
