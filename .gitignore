@@ -1,0 +1,4 @@
+*.typelib
+*.so
+*.gir
+*.vapi
