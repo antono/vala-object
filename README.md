@@ -16,6 +16,12 @@ Vala is [very fast][VBench]. Keep in mind!
          libffi-dev glib-dev libglib2.0-dev
     make
     make run # setup for your favorite lang below
+    
+### Fedora
+
+    sudo yum install vala
+    make
+    make run # setup for your favorite lang below
 
 ### OSX
 
