@@ -1,5 +1,7 @@
 # Use Vala for your next library, %username%
 
+![Objects for free](https://github.com/antono/vala-object/blob/master/objects.jpg)
+
 Write your next library in [Vala][Vala] and get some bindings for free.
 Here is example how to get functions from shared object available to
 Ruby, Python, Lua, JavaScript and [many other languages][GOB]
