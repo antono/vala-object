@@ -43,8 +43,20 @@ Feel free to add OSX instructions... I've donated my mac to charity :)
 
 ## JavaScript
 
+### GNOME js engines have native GIR support
+
     sudo apt-get install gjs seed
-    make run-js
+    make run-gnome-js
+
+### Node.js
+
+You will need
+[nvm](https://github.com/creationix/nvm) and
+[npm](https://github.com/isaacs/npm)
+
+    nvm install v0.6.6
+    npm install gir
+    make run-node-js
 
 ## Other languages
 
