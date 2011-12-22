@@ -2,3 +2,4 @@
 *.so
 *.gir
 *.vapi
+langs/javascript/node_modules/
