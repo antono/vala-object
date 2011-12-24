@@ -34,6 +34,7 @@ Feel free to add OSX instructions... I've donated my mac to charity :)
 ## Python
 
 [Detailed instructions](https://github.com/tliron/pygobject-example)
+[Talk about PyGObject, GObject, Vala and more at the Chicago Python group](https://www.youtube.com/watch?v=6QrGmA_RR4E)
 
     make run-python
 
