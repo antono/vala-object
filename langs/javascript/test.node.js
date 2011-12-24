@@ -2,4 +2,11 @@
 
 var gir = require("gir");
 gir.init();
-gir.load('ValaObject').sayHelloTo('Node.js');
+var ValaObject = gir.load('ValaObject')
+
+ValaObject.sayHelloTo('Node.js');
+
+// FIXME
+// var inst = new ValaObject.ValaClass();
+// console.log(inst); // => {}
+// console.log(inst.append_to_name('called from Node.js'));

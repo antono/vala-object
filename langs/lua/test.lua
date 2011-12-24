@@ -3,4 +3,10 @@
 
 require 'luarocks/loader'
 
-require('lgi').ValaObject.say_hello_to('Lua')
+ValaObject = require('lgi').ValaObject
+ValaObject.say_hello_to('Lua')
+
+local table = ValaObject.ValaClass()
+local str   = table.append_to_name(table, "called from lua")
+
+print(str)
