@@ -33,6 +33,8 @@ Feel free to add OSX instructions... I've donated my mac to charity :)
 
 ## Python
 
+[Detailed instructions](https://github.com/tliron/pygobject-example)
+
     make run-python
 
 ## Lua
