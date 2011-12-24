@@ -32,10 +32,10 @@ Feel free to add OSX instructions... I've donated my mac to charity :)
 
 ## Bindings HOWTO (really easy and automagical)
 
- - [Ruby](langs/ruby/README.md) (Ruby 1.9.1, JRuby and Rubinius)
- - [Python](langs/python/README.md)
- - [Lua](langs/lua/README.md) (Lua 5.1 and LuaJIT 5.1)
- - [JavaScript](langs/javascript/README.md) (Node.js, seed and gjs)
+ - [Ruby](vala-object/tree/master/langs/ruby/README.md) (Ruby 1.9.1, JRuby and Rubinius)
+ - [Python](vala-object/tree/master/langs/python/README.md)
+ - [Lua](vala-object/tree/master/langs/lua/README.md) (Lua 5.1 and LuaJIT 5.1)
+ - [JavaScript](vala-object/tree/master/langs/javascript/README.md) (Node.js, seed and gjs)
  - [Other languages](https://live.gnome.org/GObjectIntrospection/Users)
 
 ## Questions?
