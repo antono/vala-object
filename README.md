@@ -30,6 +30,18 @@ in your favorite language.
 
 Feel free to add OSX instructions... I've donated my mac to charity :)
 
+## Make shared library
+
+   make
+
+You should get `vala-object.so` and `ValaObject-0.1.typelib` and
+some other files. .so and .typelib are required for next examples.
+
+If you want more details - read about
+[GObject Introspection](https://live.gnome.org/GObjectIntrospection/) and it's
+[architecture](https://live.gnome.org/GObjectIntrospection/Architecture).
+Otherwise just skip to next step :)
+
 ## Bindings HOWTO (really easy and automagical)
 
  - [Ruby](vala-object/tree/master/langs/ruby/README.md) (Ruby 1.9.1, JRuby and Rubinius)
