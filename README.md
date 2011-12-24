@@ -32,10 +32,13 @@ Feel free to add OSX instructions... I've donated my mac to charity :)
 
 ## Make shared library
 
+Source file shared library is `object.vala`.
+Make it:
+
    make
 
 You should get `vala-object.so` and `ValaObject-0.1.typelib` and
-some other files. .so and .typelib are required for next examples.
+some other files. `.so` and `.typelib` are required for next examples.
 
 If you want more details - read about
 [GObject Introspection](https://live.gnome.org/GObjectIntrospection/) and it's
