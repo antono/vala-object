@@ -43,6 +43,7 @@ Feel free to add OSX instructions... I've donated my mac to charity :)
  - Mailing list: [vala](https://mail.gnome.org/mailman/listinfo/vala-list)
  - IRC: #vala at irc.gimp.org
  - [Documentation](https://live.gnome.org/Vala/Documentation)
+ - [Google+ page](https://plus.google.com/115393489934129239313/posts)
 
 [Vala]: https://live.gnome.org/Vala/
 [VBench]: http://code.google.com/p/vala-benchmarks/wiki/BenchResults
