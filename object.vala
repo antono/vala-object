@@ -5,11 +5,11 @@ namespace ValaObject {
 		print("-- Vala\n\n");
 	}
 
-	public class ValaClass {
+	public class ValaClass : Object {
 		public string name = "Vala Class";
 
-		public string what_is_your_name() {
-			return name;
+		public string append_to_name(string suffix) {
+			return @"$name $suffix";
 		}
 	}
 }
