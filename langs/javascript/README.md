@@ -11,9 +11,9 @@ from any of 3 js intrepreters:
 
 You will need Node.js >= 0.6.0 and recent [npm](https://github.com/isaacs/npm)
 
-   npm install gir
-   ./node-run.sh test.node.js
+    npm install gir
+    ./node-run.sh test.node.js
 
 ## Seed or gjs
 
-   ./gnome-run.sh test.gnome.js
+    ./gnome-run.sh test.gnome.js
