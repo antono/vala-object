@@ -52,6 +52,7 @@ Otherwise just skip to next step :)
 
  - [Ruby](vala-object/tree/master/langs/ruby/README.md) (Ruby 1.9.1, JRuby and Rubinius)
  - [Python](vala-object/tree/master/langs/python/README.md)
+ - [Perl](vala-object/tree/master/langs/perl/README.md)
  - [Lua](vala-object/tree/master/langs/lua/README.md) (Lua 5.1 and LuaJIT 5.1)
  - [JavaScript](vala-object/tree/master/langs/javascript/README.md) (Node.js, seed and gjs)
  - [Other languages](https://live.gnome.org/GObjectIntrospection/Users)
