@@ -1,5 +1,5 @@
 # GObjects for Perl
 
-    ./run.sh test.pl
+You have to install [perl-Glib-Object-Introspection](https://live.gnome.org/GTK2-Perl/Introspection)
 
-# Links
+    ./run.sh test.pl
