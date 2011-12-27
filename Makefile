@@ -11,6 +11,9 @@ run-ruby: all
 run-python: all
 	python langs/python/test.py
 
+run-perl: all
+	perl langs/perl/test.pl
+
 run-lua: all
 	lua langs/lua/test.lua
 	luajit-2.0.0-beta8 langs/lua/test.lua
