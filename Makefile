@@ -16,7 +16,7 @@ run-perl: all
 
 run-lua: all
 	lua langs/lua/test.lua
-	luajit-2.0.0-beta8 langs/lua/test.lua
+	luajit-2.0.0-beta9 langs/lua/test.lua
 
 run-gnome-js: all
 	gjs langs/javascript/test.gnome.js
