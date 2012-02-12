@@ -35,7 +35,8 @@ Feel free to add OSX instructions... I've donated my mac to charity :)
 
 ## Make shared library
 
-Source file shared library is `object.vala`.
+Source file for shared library is `object.vala`.
+
 Run in shell:
 
     make
@@ -60,7 +61,7 @@ Otherwise just skip to next step :)
 ## Questions?
 
  - Mailing list: [vala](https://mail.gnome.org/mailman/listinfo/vala-list)
- - IRC: #vala at irc.gimp.org
+ - IRC: #introspection and #vala at irc.gnome.org
  - [Documentation](https://live.gnome.org/Vala/Documentation)
  - [Google+ page](https://plus.google.com/115393489934129239313/posts)
 
