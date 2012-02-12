@@ -25,6 +25,9 @@ run-gnome-js: all
 run-node-js: all
 	cd langs/javascript && npm install && node test.node.js
 
+c-source:
+	valac --ccode object.vala
+
 vala-object.so:
 	valac \
 		--enable-experimental    \
