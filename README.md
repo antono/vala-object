@@ -26,12 +26,7 @@ in your favorite language.
 
 ### OSX
 
-
-    brew install vala
-
-GObject Inrospection [is waiting](https://github.com/mxcl/homebrew/pull/8711)..
-
-Feel free to add OSX instructions... I've donated my mac to charity :)
+    brew install vala gobject-introspection
 
 ## Make shared library
 
