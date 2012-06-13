@@ -9,7 +9,7 @@ in your favorite language.
 
 ## Why Vala?
 
- - Vala is [very fast][VBench]
+ - Vala is [very][VBench] [fast][VBenchNew]
  - Vala manages memory for you
  - Write in Vala, (re)use from any
    [%lang%](https://live.gnome.org/GObjectIntrospection/Users)
@@ -62,3 +62,4 @@ Otherwise just skip to next step :)
 
 [Vala]: https://live.gnome.org/Vala/
 [VBench]: http://code.google.com/p/vala-benchmarks/wiki/BenchResults
+[VBenchNew]: http://jpaflacerda.wordpress.com/2011/11/08/vala-benchmarking/
