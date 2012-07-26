@@ -1,12 +1,12 @@
-// Install gir.js: https://github.com/creationix/node-gir
+// Install gir.js: npm install gir@latest
+// more infos on: https://github.com/creationix/node-gir
 
 var gir = require("gir");
 gir.init();
-var ValaObject = gir.load('ValaObject')
+var ValaObject = gir.load('ValaObject');
 
-ValaObject.sayHelloTo('Node.js');
+ValaObject.say_hello_to('Node.js');
 
-// FIXME
-// var inst = new ValaObject.ValaClass();
-// console.log(inst); // => {}
-// console.log(inst.append_to_name('called from Node.js'));
+var inst = new ValaObject.ValaClass();
+console.log(inst); // => {}
+console.log(inst.append_to_name('called from Node.js'));
