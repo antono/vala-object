@@ -1,7 +1,7 @@
 {
   "name": "vala-node",
   "description": "Vala for Node.js via GObject Introspection Repository",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "repository": {
     "type": "git",
     "url": "git://github.com/antono/vala-object.git"
@@ -9,7 +9,7 @@
   "author": "Antono Vasiljev <self@antono.info>",
   "main": "test.node.js",
   "dependencies": {
-    "gir": "0.0.1"
+    "gir": "0.1.0"
   },
   "engines": {
     "node": "*"
