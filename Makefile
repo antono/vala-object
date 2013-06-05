@@ -3,13 +3,16 @@ export GI_TYPELIB_PATH := $(shell pwd)
 
 all: vala-object.so ValaObject-0.1.typelib
 
-run: all run-ruby run-python run-lua run-gnome-js run-node-js
+run: all run-ruby run-python run-php run-lua run-gnome-js run-node-js
 
 run-ruby: all
 	ruby langs/ruby/test.rb
 
 run-python: all
 	python langs/python/test.py
+
+run-php: all
+	php langs/php/test.php
 
 run-perl: all
 	perl langs/perl/test.pl
