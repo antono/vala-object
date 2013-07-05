@@ -9,6 +9,6 @@
 *.php
 *.py
 *.js
-own-bindings/javascript/node_modules/
-!swig/*
-!gir/*
+node_modules
+!gir/*/*
+!swig/*/*

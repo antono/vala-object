@@ -6,9 +6,11 @@ RUBY1.9.1_HEADERS=-I/usr/lib/ruby/1.9.1/x86_64-linux/ -I/usr/lib/ruby/1.9.1/i686
 
 all: libobject.so ValaObject-0.1.typelib c-source
 
-run: all run-gir
+run: run-gir
 
-run-gir: all run-gir-ruby run-gir-python run-gir-php run-gir-lua run-gir-gnome-js run-gir-node-js
+run-gir: run-gir-ruby run-gir-python run-gir-php run-gir-lua run-gir-gnome-js run-gir-nodejs
+
+run-swig: run-swig-ruby run-swig-python run-swig-php run-swig-lua run-gir-nodejs
 
 ########## test gir bingings ########## 
 
@@ -32,7 +34,7 @@ run-gir-gnome-js:
 	-gjs gir/javascript/test.gnome.js
 	-seed gir/javascript/test.gnome.js
 
-run-gir-node-js:
+run-gir-nodejs:
 	-node gir/javascript/test.node.js
 
 ########## test generated bindings with Valabind and Swig ########## 
@@ -58,12 +60,7 @@ run-swig-lua:
 	-lua swig/lua/test.lua
 
 # TODO
-run-swig-gnome-js:
-	-gjs swig/javascript/test.gnome.js
-	-seed swig/javascript/test.gnome.js
-
-# TODO
-run-swig-node-js:
+run-swig-nodejs:
 	-node swig/javascript/test.node.js
 
 ########## generate bindings with Valabind and Swig ########## 
@@ -90,7 +87,7 @@ lua-swig: libobject.so c-source
 
 # TODO
 nodejs-swig: libobject.so c-source
-	valabind-cc nodejs nodejsobject -NValaObject libobject.vapi -I. `pkg-config --cflags --libs gobject-2.0` -I/usr/include -L. -lobject -x
+	valabind-cc nodejs object -NValaObject libobject.vapi -I. `pkg-config --cflags --libs gobject-2.0` -I/usr/include -L. -lobject -x
 
 ########## Vala Stuff ##########
 
