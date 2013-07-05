@@ -2,5 +2,9 @@
 *.so
 *.gir
 *.vapi
-object.c
-langs/javascript/node_modules/
+*.c
+*.h
+*.i
+*.cxx
+*.php
+own-bindings/javascript/node_modules/
