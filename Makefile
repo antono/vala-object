@@ -6,27 +6,27 @@ all: vala-object.so ValaObject-0.1.typelib
 run: all run-ruby run-python run-php run-lua run-gnome-js run-node-js
 
 run-ruby: all
-	ruby langs/ruby/test.rb
+	-ruby own-bindings/ruby/test.rb
 
 run-python: all
-	python langs/python/test.py
+	-python own-bindings/python/test.py
 
 run-php: all
-	php langs/php/test.php
+	-php own-bindings/php/test.php
 
 run-perl: all
-	perl langs/perl/test.pl
+	-perl own-bindings/perl/test.pl
 
 run-lua: all
-	lua langs/lua/test.lua
-	luajit-2.0.0-beta9 langs/lua/test.lua
+	-lua own-bindings/lua/test.lua
+	-luajit-2.0.0-beta9 own-bindings/lua/test.lua
 
 run-gnome-js: all
-	gjs langs/javascript/test.gnome.js
-	seed langs/javascript/test.gnome.js
+	-gjs own-bindings/javascript/test.gnome.js
+	-seed own-bindings/javascript/test.gnome.js
 
 run-node-js: all
-	cd langs/javascript && npm install && node test.node.js
+	-cd own-bindings/javascript && node test.node.js
 
 c-source:
 	valac --ccode object.vala
