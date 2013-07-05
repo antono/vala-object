@@ -7,4 +7,8 @@
 *.i
 *.cxx
 *.php
+*.py
+*.js
 own-bindings/javascript/node_modules/
+!swig/*
+!gir/*
