@@ -3,6 +3,7 @@ export GI_TYPELIB_PATH := $(shell pwd)
 
 RUBY1.8_HEADERS=-I/usr/lib/ruby/1.8/x86_64-linux/ -I/usr/lib/ruby/1.8/i686-linux/
 RUBY1.9.1_HEADERS=-I/usr/lib/ruby/1.9.1/x86_64-linux/ -I/usr/lib/ruby/1.9.1/i686-linux/
+PHP_HEADERS=`php-config --includes`
 
 all: libobject.so ValaObject-0.1.typelib c-source
 
@@ -49,7 +50,7 @@ run-swig-python:
 	-python swig/python/test.py
 
 run-swig-php:
-	-php swig/php/test.php
+	-make run -C swig/php
 
 # TODO
 run-swig-perl:
@@ -75,7 +76,7 @@ python-swig: libobject.so c-source
 	valabind-cc python pythonobject -NValaObject libobject.vapi -I. `pkg-config --cflags --libs gobject-2.0` -I/usr/include -L. -lobject -x
 
 php-swig: libobject.so c-source
-	valabind-cc php phpobject -NValaObject libobject.vapi -I. `php-config --includes` `pkg-config --cflags --libs gobject-2.0` -I/usr/include -L. -lobject -x
+	-make bind -C swig/php
 
 # TODO
 perl-swig: libobject.so c-source
