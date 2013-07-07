@@ -1,4 +1,4 @@
-var ValaObject = require("../../object.js");
+var ValaObject = require("./object.js");
 
 // ValaObject.say_hello_to('Node.js');
 

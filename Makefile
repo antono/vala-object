@@ -60,11 +60,10 @@ run-swig-perl:
 run-swig-lua:
 	-lua swig/lua/test.lua
 
-# TODO
 run-swig-nodejs:
-	-node swig/javascript/test.node.js
+	-make run -C swig/javascript
 
-########## generate bindings with Valabind and Swig ########## 
+########## generate bindings with Valabind ########## 
 
 # TODO
 ruby-swig: libobject.so c-source
@@ -75,7 +74,7 @@ ruby-swig: libobject.so c-source
 python-swig: libobject.so c-source
 	valabind-cc python pythonobject -NValaObject libobject.vapi -I. `pkg-config --cflags --libs gobject-2.0` -I/usr/include -L. -lobject -x
 
-php-swig: libobject.so c-source
+php-swig:
 	-make bind -C swig/php
 
 # TODO
@@ -86,9 +85,8 @@ perl-swig: libobject.so c-source
 lua-swig: libobject.so c-source
 	valabind-cc lua luaobject -NValaObject libobject.vapi -I. `pkg-config --cflags --libs gobject-2.0` -I/usr/include -L. -lobject -x
 
-# TODO
-nodejs-swig: libobject.so c-source
-	valabind-cc nodejs object -NValaObject libobject.vapi -I. `pkg-config --cflags --libs gobject-2.0` -I/usr/include -L. -lobject -x
+nodejs-swig:
+	-make bind -C swig/javascript
 
 ########## Vala Stuff ##########
 
@@ -114,3 +112,5 @@ ValaObject-0.1.typelib:
 
 clean:
 	rm -fr $(shell cat .gitignore)
+	make clean -C swig/javascript
+	make clean -C swig/php
