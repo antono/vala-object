@@ -42,8 +42,7 @@ run-gir-nodejs:
 
 # TODO
 run-swig-ruby:
-	-ruby1.8 swig/ruby/test1.8.rb
-	-ruby1.9.1 swig/ruby/test1.9.1.rb
+	-make run -C swig/ruby
 
 # TODO
 run-swig-python:
@@ -67,8 +66,7 @@ run-swig-nodejs:
 
 # TODO
 ruby-swig: libobject.so c-source
-	-valabind-cc ruby rubyoneeightobject -NValaObject libobject.vapi -I. $(RUBY1.8_HEADERS) `pkg-config --cflags --libs gobject-2.0` -I/usr/include -L. -lobject -x
-	valabind-cc ruby rubyonenineoneobject -NValaObject libobject.vapi -I. $(RUBY1.9.1_HEADERS) `pkg-config --cflags --libs gobject-2.0` -I/usr/include -L. -lobject -x
+	-make bind -C swig/ruby
 
 # TODO
 python-swig: libobject.so c-source
@@ -114,3 +112,4 @@ clean:
 	rm -fr $(shell cat .gitignore)
 	make clean -C swig/javascript
 	make clean -C swig/php
+	make clean -C swig/ruby

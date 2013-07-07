@@ -1,6 +1,6 @@
-require 'object.so' # gem install gir_ffi
+require './object.so' # gem install gir_ffi
 
-ValaObject.say_hello_to('Ruby')
+#ValaObject.say_hello_to('Ruby')
 
 instance = ValaObject::ValaClass.new
 
