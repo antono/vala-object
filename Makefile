@@ -62,6 +62,9 @@ run-lua-valabind:
 run-nodejs-valabind:
 	-make run -C valabind/javascript
 
+run-java-valabind:
+	-make run -C valabind/java
+
 ########## generate bindings with Valabind ########## 
 
 # TODO
@@ -85,6 +88,9 @@ lua-valabind: libobject.so c-source
 
 nodejs-valabind:
 	-make bind -C valabind/javascript
+
+java-valabind:
+	-make bind -C valabind/java
 
 ########## Vala Stuff ##########
 
@@ -113,3 +119,4 @@ clean:
 	make clean -C valabind/javascript
 	make clean -C valabind/php
 	make clean -C valabind/ruby
+	make clean -C valabind/java
