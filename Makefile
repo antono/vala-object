@@ -65,6 +65,10 @@ run-nodejs-valabind:
 run-java-valabind:
 	-make run -C valabind/java
 
+# TODO
+d-valabind:
+	-make run -C valabind/d
+
 ########## generate bindings with Valabind ########## 
 
 # TODO
@@ -91,6 +95,10 @@ nodejs-valabind:
 
 java-valabind:
 	-make bind -C valabind/java
+
+# TODO
+d-valabind:
+	-make bind -C valabind/d
 
 ########## Vala Stuff ##########
 
@@ -120,3 +128,4 @@ clean:
 	make clean -C valabind/php
 	make clean -C valabind/ruby
 	make clean -C valabind/java
+	make clean -C valabind/dlang

@@ -20,4 +20,4 @@ libobject.so:
 	make libobject.so -C ../../
 
 clean:
-	rm -fr *.typelib *.so *.gir *.vapi *.c *.h *.i *.cxx *.class ValaClass.makjava libobjectJNI.java libobject.java
+	rm -fr *.typelib *.so *.gir *.vapi *.c *.h *.i *.cxx *.class ValaClass.java libobjectJNI.java libobject.java
