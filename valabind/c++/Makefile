@@ -19,4 +19,4 @@ libobject.so:
 	make libobject.so -C ../../
 
 clean:
-	rm -fr *.so *.i *.cxx object.d object_im.d
+	rm -fr *.so *.i *.cxx object.d object_im.d *.out

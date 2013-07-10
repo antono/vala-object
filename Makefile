@@ -129,3 +129,4 @@ clean:
 	make clean -C valabind/ruby
 	make clean -C valabind/java
 	make clean -C valabind/dlang
+	make clean -C valabind/c++
