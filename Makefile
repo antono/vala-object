@@ -7,11 +7,11 @@ PHP_HEADERS=`php-config --includes`
 
 all: libobject.so ValaObject-0.1.typelib c-source
 
-run: run-gir
+run: run-gir run-valabind
 
 run-gir: run-gir-ruby run-gir-python run-gir-php run-gir-lua run-gir-gnome-js run-gir-nodejs
 
-run-valabind: run-valabind-ruby run-valabind-python run-valabind-php run-valabind-lua run-gir-nodejs
+run-valabind: run-valabind-ruby run-valabind-python run-valabind-php run-valabind-lua run-gir-nodejs run-node-webkit-valabind
 
 ########## test gir bingings ########## 
 
@@ -60,7 +60,10 @@ run-lua-valabind:
 	-lua valabind/lua/test.lua
 
 run-nodejs-valabind:
-	-make run -C valabind/javascript
+	-make run -C valabind/node.js
+
+run-node-webkit-valabind:
+	-make run -C valabind/node-webkit
 
 run-java-valabind:
 	-make run -C valabind/java
@@ -90,7 +93,10 @@ lua-valabind: libobject.so c-source
 	valabind-cc lua luaobject -NValaObject libobject.vapi -I. `pkg-config --cflags --libs gobject-2.0` -I/usr/include -L. -lobject -x
 
 nodejs-valabind:
-	-make bind -C valabind/javascript
+	-make bind -C valabind/node.js
+
+node-webkit-valabind:
+	-make bind -C valabind/node-webkit
 
 java-valabind:
 	-make bind -C valabind/java
@@ -125,7 +131,8 @@ ValaObject-0.1.typelib:
 
 clean:
 	rm -fr $(shell cat .gitignore)
-	make clean -C valabind/javascript
+	make clean -C valabind/node.js
+	make clean -C valabind/node-webkit
 	make clean -C valabind/php
 	make clean -C valabind/ruby
 	make clean -C valabind/java

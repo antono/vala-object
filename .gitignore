@@ -11,4 +11,4 @@
 *.js
 node_modules
 !gir/*/*
-!swig/*/*
+!valabind/*/*

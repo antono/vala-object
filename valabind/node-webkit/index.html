@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello World!</title>
+</head>
+<body>
+<h1>Valabind Test</h1>
+	<script>
+		var ValaObject = require("./vala_node_object");
+
+		//ValaObject.say_hello_to('Node.js');
+
+		var inst = new ValaObject.ValaClass();
+		console.log();
+		document.write(inst.append_to_name('called from Node.js'))
+	</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "main": "index.html",
+  "name": "nw-ValaObject",
+  "description": "demo app of node-webkit with vala bindings",
+  "version": "0.0.1",
+  "dependencies": {
+    "nw-gyp": "*",
+    "ref-struct": "0.0.4",
+    "ref": "~0.1.3",
+    "ffi": "~1.2.0"
+  },
+  "keywords": [ "demo", "node-webkit" ],
+  "window": {
+    "icon": "",
+    "toolbar": true,
+    "frame": true
+  },
+  "webkit": {
+    "plugin": true
+  }
+}
