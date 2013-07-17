@@ -1,4 +1,6 @@
+#include "vala_cpp_object.cxx"
+
 int main( ) {
-	ValaObjectValaClass test = new_ValaObjectValaClass();
+	
 	return 0;
 }
