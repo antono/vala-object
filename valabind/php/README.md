@@ -1,0 +1,1 @@
+printf "\n%s%s%s\n" "extension=" $(pwd) "/object.so" >> /etc/php5/cli/php.ini

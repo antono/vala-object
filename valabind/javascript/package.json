@@ -1,0 +1,12 @@
+{
+  "name": "ValaObject",
+  "version": "0.0.1",
+  "url": "https://github.com/antono/vala-object",
+  "description": "",
+  "repository" : {"type": "git", "url": "git@github.com:antono/vala-object.git"},
+  "dependencies": {
+    "ref-struct": "0.0.4",
+    "ref": "~0.1.3",
+    "ffi": "~1.2.0"
+  }
+}
