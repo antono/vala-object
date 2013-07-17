@@ -1,6 +1,5 @@
 namespace ValaObject {
-	public void say_hello_to (string lang)
-	{
+	public void say_hello_to (string lang) {
 		print(@"I love You, $lang!!!\n");
 		print("-- Vala\n\n");
 	}
