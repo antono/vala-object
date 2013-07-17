@@ -2,5 +2,13 @@
 *.so
 *.gir
 *.vapi
-object.c
-langs/javascript/node_modules/
+*.c
+*.h
+*.i
+*.cxx
+*.php
+*.py
+*.js
+node_modules
+!gir/*/*
+!swig/*/*

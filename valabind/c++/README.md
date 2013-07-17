@@ -1,0 +1,1 @@
+sudo apt-get install libtclcl1-dev tcl8.6-dev

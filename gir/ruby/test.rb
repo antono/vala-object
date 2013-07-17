@@ -1,6 +1,4 @@
-require 'gir_ffi' # gem install gir_ffi
-
-GirFFI.setup(:ValaObject)
+require 'object.so' # gem install gir_ffi
 
 ValaObject.say_hello_to('Ruby')
 
