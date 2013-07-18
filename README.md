@@ -45,12 +45,12 @@ If you want more details - read about
 Otherwise just skip to next step :)
 
 ## Bindings HOWTO (really easy and automagical)
- - [Ruby](langs/ruby/README.md) (Ruby 1.9.1, JRuby and Rubinius)
- - [Python](langs/python/README.md)
- - [Perl](langs/perl/README.md)
- - [Lua](langs/lua/README.md) (Lua 5.1 and LuaJIT 5.1)
- - [JavaScript](langs/javascript/README.md) (Node.js, seed and gjs)
- - [PHP](langs/php/README.md)
+ - [Ruby](gir/ruby/README.md) (Ruby 1.9.1, JRuby and Rubinius)
+ - [Python](gir/python/README.md)
+ - [Perl](gir/perl/README.md)
+ - [Lua](gir/lua/README.md) (Lua 5.1 and LuaJIT 5.1)
+ - [JavaScript](gir/javascript/README.md) (Node.js, seed and gjs)
+ - [PHP](gir/php/README.md)
  - [Other languages](https://live.gnome.org/GObjectIntrospection/Users)
 
 ## Questions?
