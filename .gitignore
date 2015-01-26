@@ -9,6 +9,7 @@
 *.php
 *.py
 *.js
+.c9/
 node_modules
 !gir/*/*
 !valabind/*/*
