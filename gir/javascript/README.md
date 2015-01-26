@@ -11,9 +11,12 @@ from any of 3 js intrepreters:
 
 You will need Node.js >= 0.6.0 and recent [npm](https://github.com/isaacs/npm)
 
-    npm install gir
+    cd gir/javascript/
+    npm install kapouer/node-gir
     ./node-run.sh test.node.js
 
 ## Seed or gjs
 
+    cd gir/javascript/
+    sudo apt-get install gjs seed
     ./gnome-run.sh test.gnome.js
