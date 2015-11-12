@@ -45,6 +45,7 @@ If you want more details - read about
 Otherwise just skip to next step :)
 
 ## Bindings HOWTO (really easy and automagical)
+
  - [Ruby](gir/ruby/README.md) (Ruby 1.9.1, JRuby and Rubinius)
  - [Python](gir/python/README.md)
  - [Perl](gir/perl/README.md)
